@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:minWidth="300dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:text="Grow App"
+        android:gravity="center"
+        android:padding="15dp"/>
+
+    <RadioGroup
+        android:id="@+id/filer_container"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_all"
+            android:text="None"
+            android:textSize="20sp"
+            android:checked="true"
+            android:padding="10dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_by_sale"
+            android:text="Items on Sale"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_by_discount"
+            android:text="Items by Discount"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="@android:color/darker_gray"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/apply_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:text="Apply "
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
